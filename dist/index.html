@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo-js-smart-table</title>
+    <link rel="stylesheet" href="../node_modules/js-smart-table/dist/styles/main.css">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 class="text-center mt-3">js-smart-table v1.0.5</h1>
+
+    <div class="d-flex justify-content-around">
+        <div class="shadowBackground w-50 px-5">
+
+            <table id="people" class="w-100 mb-4"></table>
+            <div id="pagination_people" class="default-pagination"></div>
+    
+        </div>
+    
+        <div class="w-50 d-flex justify-content-center rounded mx-auto d-block">
+            <img id="profile-pic" src="https://upload.wikimedia.org/wikipedia/en/e/ee/Unknown-person.gif" alt="profile-pic">
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <p>
+            As you can see, if you click a person, his profile picture will be reflected on the right
+            side. A difference with the demo that you saw on npm is clearly, instead of filling
+            some inputs and displaying buttons, i changed the profile picture.
+        </p>
+
+        <p>
+            Also, im not using my own API that was used on the video-tutorial, im using the 
+            <a href="https://reqres.in/api/users?page=1">reqres</a> one in order to demostrate
+            that this library can work with all the APIs that accomplish the requirements.
+        </p>
+
+        <p>
+            There is no limitations of what you can do with the "referenced" row you clicked.
+            That's why i call it "smart".
+        </p>
+
+        <p>If you try to order the table, nothin happens because unless i "configured" my table in order 
+            that the data get sort by the db gestor. Why? Because this API cant sort the data :(
+        </p>
+        <p>
+            But if you find one, nice. Any way, you can build your own api and make it sortable ;)
+        </p>
+
+        <p>And yeah, they're just 2 pages, but not my fault xD</p>
+    </div>
+
+    <h2>More information</h2>
+    <a href="https://programador51.github.io/js-smart-table/">Documentation</a> <br>
+    <a href="https://github.com/programador51/example-js-smart-table">Example code 1</a> <br>
+    <a href="">Example code 2 (Demo you're seeing)</a> <br>
+    <a href="https://www.youtube.com/watch?v=R1qauiXDGDY">Video guide (Spanish)</a> <br>
+    <a href="https://www.npmjs.com/package/js-smart-table">Library on NPM</a>
+    
+    <h2>You wanna contact me?</h2>
+    <a href="https://www.facebook.com/zhavopp/">Facebook</a> <br>
+    <p>Discord: joseluis#0144</p>
+    
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</html>
